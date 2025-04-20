@@ -1,0 +1,31 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "main": ".open-next/worker.js",
+  "name": "next-starter-template",
+  "compatibility_date": "2025-04-18",
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "kv_namespaces": [
+    // Create a KV binding with the binding name "NEXT_INC_CACHE_KV"
+    // to enable the KV based caching:
+    // {
+    //   "binding": "NEXT_INC_CACHE_KV",
+    //   "id": "<BINDING_ID>"
+    // },
+    {
+      "binding": "TRANSCRIPT_CACHE",
+      "id": "18ab4367abc542a0885434bd9af7d822"
+    }
+  ],
+  "durable_objects": {
+    "bindings": [
+      // Durable Object bindings go here
+    ]
+  },
+  "vars": {
+    // Environment variables go here
+  }
+}
