@@ -38,7 +38,7 @@ export default async function WatchPage({ searchParams }: WatchPageProps) {
       <main className="container mx-auto p-4">
         <h1 className="text-2xl font-bold mb-4">No Transcript Available</h1>
         <p>No transcript could be found for video ID: {videoId}.</p>
-        <p>This might be because the video ID is invalid, the video is private, or it simply doesn't have captions/transcript.</p>
+        <p>This might be because the video ID is invalid, the video is private, or it simply doesn&apos;t have captions/transcript.</p>
       </main>
     );
   }
